@@ -7,6 +7,7 @@
   <title>Zhewen Zheng</title>
 
   <meta name="author" content="Zhewen Zheng">
+  <meta name="description" content="Zhewen Zheng, CMU M.S. in Computer Vision candidate interested in how intelligent systems perceive, understand, and interact with the physical world.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -28,32 +29,29 @@
                     Zhewen Zheng
                   </p>
                   <p>
-                    I am a first year Master's student in Computer Vision (<strong>MSCV</strong>) at Carnegie Mellon
-                    University. I got dual Bachelor's degrees in Mathematics and Informatics from the University of
-                    Washington, and graduated
-                    with Interdisciplinary Honors. My interests lie at the intersection of computer vision, computer
-                    graphics, and robot learning.
+                    I am a Master's student in Computer Vision (<strong>MSCV</strong>) at Carnegie Mellon
+                    University, graduating in December 2026. I am interested in how intelligent systems perceive their
+                    surroundings, anticipate how the world changes, and use that understanding to guide action.
+                    My work brings together 3D vision and physical modeling to study dynamic scenes and human-object
+                    interaction. I hold a B.S. in Informatics
+                    and a B.A. in Mathematics from the University of Washington, where I graduated with Interdisciplinary Honors.
                   </p>
                   <p>
-                    Previously after my undergraduate studies, I first worked as a Machine Learning Engineer at
-                    ObvioHealth, where
-                    I led a team to build an LLM-based web portal to accelerate clinical protocol drafting and developed
-                    image classification and data synthesis pipelines. Later, at Shanghai AI Laboratory I worked on 3D
-                    Reconstruction and Novel View Synthesis methods.
-                  </p>
-                  <p>I am currently seeking Summer 2026 internship in AI/ML and research opportunities in 3D and Robot
-                    Learning.
+                    At CMU, I work on physical modeling with Dr. Yizhou Zhao and Prof. Laszlo Jeni, and on 4D reconstruction
+                    of human-clay interaction with Prof. Kris Kitani. Previously, I worked on online 3D reconstruction at
+                    Shanghai AI Laboratory, contributing to <strong>ARTDECO (ICLR 2026)</strong>, and was a Machine Learning
+                    Engineer at ObvioHealth.
                   </p>
                   <p style="text-align:center">
-                    <a href="mailto:zhewenz.dev@gmail.com">Email</a> &nbsp;/&nbsp;
+                    <a href="mailto:zhewenz@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
                     <a href="data/ZhewenZheng-Resume.pdf">Resume</a> &nbsp;/&nbsp;
                     <a href="data/ZhewenZheng-bio.txt">Bio</a> &nbsp;/&nbsp;
-                    <!-- <a href="https://twitter.com/zhewenz_dev">Twitter</a> &nbsp;/&nbsp; -->
-                    <a href="https://github.com/zhewenzheng/">Github</a>
+                    <a href="https://www.linkedin.com/in/zhewen-zheng-zw">LinkedIn</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/zhewenzheng/">GitHub</a>
                   </p>
                 </td>
                 <td style="padding:2.5%;width:37%;max-width:37%">
-                  <a href="images/ZhewenZheng.jpg"><img
+                  <a href="images/picture_square.jpg"><img
                       style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
                       src="images/picture_square.jpg" class="hoverZoomLink"></a>
                 </td>
@@ -67,11 +65,10 @@
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    I’m broadly interested in 3D learning, generation, and reconstruction—how AI systems can perceive
-                    and model the physical world in three dimensions. My past work has focused on inferring geometry,
-                    motion, and appearance from images through radiance-field-based representations. I’m also expanding
-                    my interests toward robot learning, exploring how embodied agents can leverage 3D understanding to
-                    perceive and interact with their environments.
+                    I am interested in learning representations of the physical world that connect perception with
+                    prediction and interaction. My current research approaches these questions through
+                    <strong>3D/4D reconstruction and differentiable simulation</strong>, recovering geometry and motion
+                    from visual observations and inferring material behavior from how objects move and deform.
                   </p>
                 </td>
               </tr>
@@ -81,16 +78,61 @@
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <a href="images/PhysON.gif"><img src="images/PhysON.gif" width="160" style="max-width:100%;height:auto" alt="PhysON physical modeling preview" loading="lazy"></a>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle">PhysON: 4D Physical Understanding</span><br>
+                  Carnegie Mellon University &middot; June 2026 &ndash; Present<br>
+                  Advisors: Dr. Yizhou Zhao and Prof. Laszlo Jeni
+                  <p>
+                    I designed a two-stage physical modeling pipeline that combines neural model pretraining and
+                    differentiable per-scene fitting to infer material behavior from 3D motion, for future physical AI
+                    applications. I generated synthetic trajectories in Genesis spanning elastic, plastic, granular,
+                    and viscous behavior in single- and multi-object scenes with uniform or mixed materials.
+                  </p>
+                  <p>
+                    Through architecture and supervision ablations, I identified a loading-history limitation in the
+                    simulator's sand model: identical deformations can produce different responses depending on prior loading.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <a href="images/clay4d-preview.mp4" title="Human motion with static clay Gaussian splats">
+                    <video width="160" style="max-width:100%;height:auto" autoplay loop muted playsinline
+                      poster="images/clay4d-preview.jpg" aria-label="Clay4D human mesh moving among camera frustums with static clay Gaussian splats">
+                      <source src="images/clay4d-preview.mp4" type="video/mp4">
+                      <img src="images/clay4d-preview.jpg" width="160" alt="Clay4D human mesh, camera frustums, and static clay reconstruction">
+                    </video>
+                  </a>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle">Clay4D: 4D Reconstruction of Human-Clay Interaction</span><br>
+                  Carnegie Mellon University &middot; December 2025 &ndash; Present<br>
+                  Advisor: Prof. Kris Kitani
+                  <p>
+                    Clay4D includes 165 human-clay interaction sequences totaling 2.55 hours of capture and approximately
+                    3.25 million frames across 16 static GoPros and one egocentric camera. I implemented multi-view 3D
+                    pose estimation and body and hand mesh reconstruction using RANSAC triangulation and PyMomentum
+                    fitting, combining SAM-3D-Body and WiLoR estimates.
+                  </p>
+                  <p>
+                    I am annotating full-body human-clay interaction and adapting 3D Gaussian splatting to reconstruct
+                    deforming clay under occlusion from calibrated multi-view videos.
+                  </p>
+                </td>
+              </tr>
               <tr onmouseout="artdeco_stop()" onmouseover="artdeco_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='artdeco_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/artdeco.mp4" type="video/mp4">
+                        <source src="images/artdeco_sq.mp4" type="video/mp4">
                         Your browser does not support the video tag.
 
                       </video></div>
-                    <img src='images/artdeco.jpg' width="160">
+                    <img src='images/artdeco.jpg' width="160" alt="ARTDECO 3D reconstruction">
                   </div>
                   <script type="text/javascript">
                     function artdeco_start() {
@@ -117,18 +159,21 @@
                   <a href="https://gaoxin492.github.io/">Xin Gao</a>,
                   <a href="https://daibo.info/">Bo Dai</a>,
                   <a href="https://scholar.google.com/citations?user=9pUCoOkAAAAJ">Jian Pu</a>,
-                  <a href="https://mulinyu.github.io/">Mulin Yu</a>
+                  <a href="https://mulinyu.github.io/">Mulin Yu</a>,
                   <a href="https://oceanpang.github.io/">Jiangmiao Pang</a>
                   <br>
-                  <em>arXiv</em>, 2025
+                  <em>ICLR</em>, 2026
                   <br>
                   <a href="https://city-super.github.io/artdeco/">project page</a>
                   /
                   <a href="https://arxiv.org/abs/2510.08551">arXiv</a>
+                  /
+                  <a href="https://github.com/InternRobotics/ARTDECO">code</a>
                   <p></p>
                   <p>
-                    By unifying 3D foundation priors with structured scene representations we enable robust and
-                    generalizable 3D reconstruction of diverse real-world scenes using only monocular video.
+                    Online 3D reconstruction from monocular video using structured scene representations and 3D foundation
+                    priors. I built the tracking-to-mapping interface, propagated camera pose updates to Gaussian splats,
+                    implemented frame selection separating geometry insertion from refinement, and contributed to benchmark evaluation.
                   </p>
                 </td>
               </tr>
@@ -156,6 +201,7 @@
                 <td style=" width:80%">
                   <strong>Carnegie Mellon University</strong>, Pittsburgh, PA<br>
                   M.S. in Computer Vision, expected Dec 2026<br>
+                  GPA: 4.0/4.0<br>
                   Relevant Coursework: Advanced Computer Vision, Learning for 3D Vision,
                   Robot Learning
                 </td>
@@ -166,7 +212,7 @@
                 </td>
                 <td style="width:80%">
                   <strong>University of Washington</strong>, Seattle, WA<br>
-                  B.S. in Mathematics and B.S. in Informatics, June 2022<br>
+                  B.S. in Informatics and B.A. in Mathematics, May 2022<br>
                   Graduated with Interdisciplinary Honors (GPA: 3.75/4.00)<br>
                   Relevant Coursework:
                   Machine Learning, Computer Vision, Algorithms, Data Structures, Linear Algebra, Multivariable
@@ -197,6 +243,7 @@
                 <td style=" width:80%">
                   <strong>Shanghai AI Laboratory</strong>, Shanghai, China<br>
                   Research Assistant, Feb 2024 - Aug 2025<br>
+                  <p>Online 3D reconstruction with Gaussian splatting; co-author of ARTDECO (ICLR 2026).</p>
                 </td>
               </tr>
               <tr>
@@ -204,8 +251,11 @@
                   <img src="images/obviohealth.svg" alt="ObvioHealth Logo" width="90%">
                 </td>
                 <td style="width:80%">
-                  <strong>ObvioHealth USA</strong>, New York, NY<br>
+                  <strong>ObvioHealth</strong>, Remote, Seattle, WA<br>
                   Machine Learning Engineer, Aug 2022 - June 2023<br>
+                  <p>Built a synthetic-data pipeline with Instant-NGP and Blender for segmentation model training.
+                    Led a five-person team integrating LLMs into a clinical protocol drafting portal; interviews with
+                    medical writers suggested it could reduce drafting time from approximately one week to 1&ndash;2 days.</p>
                 </td>
               </tr>
 
@@ -239,6 +289,7 @@
           </table>
         </td>
       </tr>
+    </tbody>
   </table>
 </body>
 
